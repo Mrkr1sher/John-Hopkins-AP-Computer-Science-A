@@ -1,4 +1,3 @@
-
 /**
  * This program asks the user to guess a secret number between 1 and a number they enter
  * 
