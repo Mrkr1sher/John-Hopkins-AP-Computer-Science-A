@@ -5,6 +5,7 @@
  * @author Krish Thawani
  *
  */
+
 import java.util.Scanner;
 
 public class Unit6Lab1 {
