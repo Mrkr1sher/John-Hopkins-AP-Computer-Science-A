@@ -3,6 +3,7 @@
  * This program tests the methods defined in ArrayTools
  * 
  * @author Krish Thawani
+ * Unit 6 Lab 2
  *
  */
 
