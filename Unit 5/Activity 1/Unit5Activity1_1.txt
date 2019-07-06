@@ -1,0 +1,8 @@
+Unit 5 Activity 1 Part 1
+Krish Thawani
+
+
+1a. 2 constants in the Math class: PI and E
+1b. 54 non-inherited methods in Math class
+1c. 37 non-inherited methods have unique names
+1d. 11 non-inherited methods with same name but different parameters
