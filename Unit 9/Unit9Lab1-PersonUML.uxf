@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>310</y>
+      <w>310</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Person
+--
+
+-Name: name
+-Date: birthDay
+
+--
+
++Person (fn: String, ln: String, bd: Date)
++Person (name: Name, bd: Date)
++Person()
++getFirstName():String
++getLastName():String
++getFullName():String
++getBirthDayString():String
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>380</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt; uses</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>310</y>
+      <w>290</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Name
+--
+
+-String: firstName
+-String: lastName
+
+--
+
++Name()
++Name(f: String, l: String)
++setFirstName(s: String):void
++setLastName(s: String):void
++getFirstName():String
++getLastName():String
++getFullName():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>380</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>uses &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>310</y>
+      <w>320</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Date
+--
+
+-int: day
+-int: month
+-int: year
+
+--
+
++Date(d: int, m: int, y: int)
++setDay(d: int):void
++setMonth(m: int):void
++setYear(y: int):void
++getDay():int
++getMonth():int
++getYear():int
++getDate():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

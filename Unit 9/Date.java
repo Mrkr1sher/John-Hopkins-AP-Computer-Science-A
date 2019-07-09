@@ -3,13 +3,25 @@
  * 
  * @author Krish Thawani
  * 
- *         Unit 9 Activity 1
+ * 
  */
 
 public class Date {
     private int day;
     private int month;
     private int year;
+
+    public Date(int d, int m, int y) {
+        if (d > 0 && d < 31)
+            day = d;
+        else
+            throw new IllegalArgumentException("Invalid Day");
+        if (m > 0 && m < 12)
+            month = m;
+        else
+            throw new IllegalArgumentException("Invalid Month");
+        year = y;
+    }
 
     public void setDay(int d) {
         if (d > 0 && d < 31)
