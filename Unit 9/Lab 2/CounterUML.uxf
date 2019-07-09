@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>180</y>
+      <w>330</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>CounterConsoleMenu
+--
+
+-Scanner: input
+-Counter: counter
+-boolean: play
+
+--
+
++CounterConsoleMenu()
++CounterConsoleMenu(count: Counter)
++displayMenu():void
++getInput():void
++displayCount():void
++userWantsToPlay():boolean
++readInput(input: int):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>250</y>
+      <w>270</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>uses &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>180</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Counter
+--
+
+-int: count
+
+--
+
++increment():void
++decrement():void
++reset():void
++getCount():int
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
