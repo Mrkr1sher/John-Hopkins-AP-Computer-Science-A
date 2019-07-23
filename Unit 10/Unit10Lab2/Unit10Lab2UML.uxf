@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>100</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Counter
+--
+
+-int: count
+
+--
+
++increment():void
++decrement():void
++reset():void
++getCount():int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>70</y>
+      <w>300</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>CounterConsoleMenu
+--
+
+-Scanner: input
+-Counter: counter
+-boolean: play
+
+--
+
++CounterConsoleMenu()
++CounterConsoleMenu(count: Counter)
++displayMenu():void
++getInput():void
++displayCount():void
++userWantsToPlay():boolean
++setPlay(p: boolean):void
++readInput(input: int):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>160</y>
+      <w>220</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>uses &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>400</y>
+      <w>300</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>MemoryCounterConsoleMenu
+--
+
+-MemoryCounter: mem
+
+--
+
++MemoryCounterConsoleMenu
++displayMenu():void
++displayCount():void
++readInput(input: int):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>330</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>460</y>
+      <w>200</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>uses &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>400</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>MemoryCounter
+--
+
+-int: memoryCount
+
+--
+
++addMemory():void
++resetMemory():void
++getMemory():int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>270</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+</diagram>
