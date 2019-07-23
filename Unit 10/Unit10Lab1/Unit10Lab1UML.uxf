@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>54</y>
+      <w>270</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>Person
+--
+
+-String: name
+-String: address
+-String: email
+-String: phoneNumber
+-Date: birthDate
+
+--
+
++Person()
++Person(name, address, email, phoneNumber, birthDate: Date)
++setName(s):void
++setAddress(s):void
++setEmail(s):void
++setPhoneNumber(s):void
++setBirthDate(s: Date):void
++getName():String
++getAddress():String
++getEmail():String
++getPhoneNumber():String
++getBirthDate():Date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>102</x>
+      <y>90</y>
+      <w>84</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>
+parameter types 
+not specified 
+are String
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>474</x>
+      <y>126</y>
+      <w>114</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>uses &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>78</y>
+      <w>162</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>Date
+--
+
+-int: day
+-int: month
+-int: year
+
+--
+
++Date()
++Date(day: int, month: int, year: int)
++setDay(d: int):void
++setMonth(m: int):void
++setYear(y: int):void
++getDay():int
++getMonth():int
++getYear():int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>348</y>
+      <w>414</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+
+-double: salary
+-Date: hireDate
+
+--
+
++Employee()
++Employee(name, address, email, phoneNumber, birthDate: Date, salary: double, hireDate: Date)
++setSalary(s: double):void
++setHireDate(s: Date):void
++getSalary():double
++getHireDate():Date
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>354</x>
+      <y>264</y>
+      <w>258</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;410.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>12</x>
+      <y>348</y>
+      <w>336</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Student
+--
+
+-String: classStatus
+
+--
+
++Student()
++Student(name, address, email, phoneNumber, birthDate: Date, classStatus)
++setStatus(s: String):void
++getStatus():String
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>264</y>
+      <w>150</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>534</y>
+      <w>492</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Faculty
+--
+
+-String: officeHours
+-String: rank
+
+--
+
++Faculty()
++Faculty(name, address, email, phoneNumber, birthDate: Date, salary: double, hireDate: Date, officeHours, rank)
++setOfficeHours(s:String):void
++setRank(s:String):void
++getOfficeHours():String
++getRank():String
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>486</y>
+      <w>348</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>560.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>522</x>
+      <y>534</y>
+      <w>432</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Staff
+--
+
+-String: jobTitle
+
+--
+
++Staff()
++Staff(name, address, email, phoneNumber, birthDate: Date, salary: double, hireDate: Date, jobTitle)
++setJobTitle(s:String):void
++getJobTitle():String
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>642</x>
+      <y>486</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;80.0</additional_attributes>
+  </element>
+</diagram>
