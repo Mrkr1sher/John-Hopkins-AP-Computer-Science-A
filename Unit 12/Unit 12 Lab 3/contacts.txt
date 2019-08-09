@@ -1,0 +1,4 @@
+Christie      Cyclone      123-456-7890      christie@cyclone.com
+Emily      Earthquake      999-888-9999      emily@earthquake.com
+Lindsay      Lightning      128-349-4567      lindsay@lightning.com
+Tiffany      Thunder      555-555-1234      tiffany@thunder.com
